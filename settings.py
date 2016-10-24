@@ -3,15 +3,15 @@ import os
 ## Price
 
 # The minimum rent you want to pay per month.
-MIN_PRICE = 1500
+MIN_PRICE = 600
 
 # The maximum rent you want to pay per month.
-MAX_PRICE = 2000
+MAX_PRICE = 1000
 
-BEDROOMS = 2
-BATHROOMS = 2
+# BEDROOMS = 1 
+# BATHROOMS = 1 
 
-MIN_SQUARE_FT = 1000
+# MIN_SQUARE_FT = 1000
 #MAX_SQUARE_FT
 
 
@@ -32,9 +32,13 @@ AREAS = ["lac"]
 # name.  If no match, the neighborhood field, which is a string, will be checked to see if it matches
 # anything in NEIGHBORHOODS.
 BOXES = {
-    "koreatown": [
-        [34.042134, -118.32741],
-        [34.075946, -118.278766]
+    "silverlake_los_feliz": [
+	[34.090398, -118.3043],
+	[34.119834, -118.268518]
+    ],
+    "echo_park": [
+	[34.066454, -118.272285],
+	[34.093646, -118.237524]
     ]
 }
 
@@ -42,7 +46,7 @@ BOXES = {
 # one of the boxes you defined, it will be checked to see if the neighborhood name it was listed under matches one
 # of these.  This is less accurate than the boxes, because it relies on the owner to set the right neighborhood,
 # but it also catches listings that don't have coordinates (many listings are missing this info).
-NEIGHBORHOODS = ["koreatown", "korea town", "korea_town"]
+NEIGHBORHOODS = ["silverlake", "silver_lake", "los_feliz", "echo_park", "hollywood"]
 
 ## Transit preferences
 
@@ -65,7 +69,7 @@ NEIGHBORHOODS = ["koreatown", "korea town", "korea_town"]
 # For instance, https://sfbay.craigslist.org/search/apa find apartments for rent.
 # https://sfbay.craigslist.org/search/sub finds sublets.
 # You only need the last 3 letters of the URLs.
-CRAIGSLIST_HOUSING_SECTION = 'apa'
+CRAIGSLIST_HOUSING_SECTION = 'roo'
 
 ## System settings
 
@@ -75,7 +79,7 @@ CRAIGSLIST_HOUSING_SECTION = 'apa'
 SLEEP_INTERVAL = 30 * 60 # 20 minutes
 
 # Which slack channel to post the listings into.
-SLACK_CHANNEL = "#housing"
+SLACK_CHANNEL = "#brian-housing"
 
 # The token that allows us to connect to slack.
 # Should be put in private.py, or set as an environment variable.
