@@ -99,3 +99,11 @@ Deploying
 
 * Create a server that has Docker installed.  It's suggested to use Digital Ocean.
 * Follow the configuration + installation instructions for Docker above.
+
+
+## My Custom docker
+
+1. run `docker build . ` to build a new image with the current code
+2. run `docker images` to see the image you just created
+3. run `docker run -it {IMAGE_ID} python3 main_loop.py`
+

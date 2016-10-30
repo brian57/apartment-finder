@@ -46,7 +46,7 @@ BOXES = {
 # one of the boxes you defined, it will be checked to see if the neighborhood name it was listed under matches one
 # of these.  This is less accurate than the boxes, because it relies on the owner to set the right neighborhood,
 # but it also catches listings that don't have coordinates (many listings are missing this info).
-NEIGHBORHOODS = ["silverlake", "silver_lake", "los_feliz", "echo_park", "hollywood"]
+NEIGHBORHOODS = ["silverlake", "silver_lake", "los_feliz", "echo_park", "hollywood", "silver lake", "echo park", "los feliz"]
 
 ## Transit preferences
 
